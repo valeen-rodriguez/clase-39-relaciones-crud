@@ -11,6 +11,7 @@
     <figure>
         <img src="/img/logo-DH.png" alt="Logo Digital House">
     </figure>
+    <p><a href="/movies">Listado de Películas</a></p>
     <h1><%= movie.title %> </h1>    
     <br>
     <p>RATING: <%= movie.rating %> </p>
@@ -20,6 +21,8 @@
     <br>
     <section>
         <!--Aquí debe colocar los botones de Modificar - Borrar y Listado de Películas-->
+        <a href="/movies/edit/<%= movie.id %>" class="button">Modificar</a>
+        <a href="/movies/delete/<%= movie.id %>" class="button">Borrar</a>
     </section>
 
 </body>
